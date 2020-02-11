@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>ef2f987a-263f-47a6-94e8-f91caf707085</UserSecretsId>
+    <AssemblyName>fribs.netcore.api.echo.host</AssemblyName>
+    <RootNamespace>fribs.netcore.api.echo.host</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="ServiceStack" Version="5.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\fribs.netcore.exceptions\fribs.netcore.exceptions.csproj" />
+    <ProjectReference Include="..\..\..\fribs.netcore.logging\fribs.netcore.logging.csproj" />
+    <ProjectReference Include="..\..\fribs.netcore.api.extensions\fribs.netcore.api.extensions.csproj" />
+    <ProjectReference Include="..\fribs.netcore.api.echo.server\fribs.netcore.api.echo.server.csproj" />
+  </ItemGroup>
+
+</Project>

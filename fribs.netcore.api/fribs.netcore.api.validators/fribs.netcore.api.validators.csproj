@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>fribs.netcore.api.validators</AssemblyName>
+    <RootNamespace>fribs.netcore.api.validators</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServiceStack" Version="5.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\fribs.netcore.exceptions\fribs.netcore.exceptions.csproj" />
+  </ItemGroup>
+
+</Project>

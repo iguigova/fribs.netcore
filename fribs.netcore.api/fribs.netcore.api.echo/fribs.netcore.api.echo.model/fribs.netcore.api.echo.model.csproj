@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>fribs.netcore.api.echo.model</RootNamespace>
+    <AssemblyName>fribs.netcore.api.echo.model</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Enumerations\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Enumerations\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Enumerations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServiceStack" Version="5.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\fribs.netcore.api.response\fribs.netcore.api.response.csproj" />
+  </ItemGroup>
+
+</Project>

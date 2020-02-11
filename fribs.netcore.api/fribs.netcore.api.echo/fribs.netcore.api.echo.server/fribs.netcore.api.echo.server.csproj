@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>fribs.netcore.api.echo.server</AssemblyName>
+    <RootNamespace>fribs.netcore.api.echo.server</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServiceStack" Version="5.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\fribs.netcore.api.authorizers\fribs.netcore.api.authorizers.csproj" />
+    <ProjectReference Include="..\fribs.netcore.api.echo.model\fribs.netcore.api.echo.model.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>fribs.netcore.logging</AssemblyName>
+    <RootNamespace>fribs.netcore.logging</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NLog" Version="4.6.8" />
+    <PackageReference Include="NLog.Targets.Syslog" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fribs.netcore.configuration\fribs.netcore.configuration.csproj" />
+    <ProjectReference Include="..\fribs.netcore.exceptions\fribs.netcore.exceptions.csproj" />
+  </ItemGroup>
+
+</Project>

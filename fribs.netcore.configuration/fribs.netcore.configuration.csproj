@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>fribs.netcore.configuration</AssemblyName>
+    <RootNamespace>fribs.netcore.configuration</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fribs.netcore.cache\fribs.netcore.cache.csproj" />
+  </ItemGroup>
+
+</Project>
