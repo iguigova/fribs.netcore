@@ -89,7 +89,6 @@ namespace fribs.netcore.cache
 
                 db.KeyDelete(keys.Select(x => (RedisKey)x.ToLower()).ToArray());
             }
-
         }
 
         public bool Replace<T>(string key, T value, DateTime expiresAt) { throw new NotImplementedException(); }
@@ -128,7 +127,6 @@ namespace fribs.netcore.cache
             {
                 db.KeyDelete(keys.Select(x => (RedisKey)x.ToLower()).ToArray());
             }
-
         }
 
         public void RemoveByRegex(string regex) { throw new NotImplementedException(); }
@@ -148,6 +146,12 @@ namespace fribs.netcore.cache
             var db = _connMultiplexer.GetDatabase();
 
             return db.KeyTimeToLive(key.ToLower());
+        }
+
+        public void RemoveExpiredEntries() 
+        {
+            // TODO: Introduced with ICacheClientExtended update...
+            // we have Remove, RemoveAll, RemoveByPattern, and RemoveByRegex so far
         }
     }
 }
